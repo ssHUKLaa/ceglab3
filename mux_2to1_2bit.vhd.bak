@@ -1,0 +1,11 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY mux_2to1_2bit IS
+    PORT(
+        sel     : IN  STD_LOGIC;                             -- Select input
+        d_in1   : IN  STD_LOGIC_VECTOR(2 downto 0);        -- 8-bit Data input 1
+        d_in2   : IN  STD_LOGIC_VECTOR(2 downto 0);        -- 8-bit Data input 2                         -- Reset input
+        d_out   : OUT STD_LOGIC_VECTOR(2 downto 0)          -- 8-bit Data output
+    );
+END mux_2to1_4bit;

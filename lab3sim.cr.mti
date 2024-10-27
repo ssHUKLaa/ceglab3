@@ -1,0 +1,105 @@
+C:/Users/sahil/Documents/repos/vhdl_files/lab3/counter_4bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/counter_4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity counter_4bit
+-- Compiling architecture Structural of counter_4bit
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/topLevel.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/topLevel.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity topLevel
+-- Compiling architecture basic of topLevel
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF_enar.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF_enar.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity d_FF_enar
+-- Compiling architecture rtl of d_FF_enar
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/enabledsrlatch.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/enabledsrlatch.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity enabledSRLatch
+-- Compiling architecture rtl of enabledSRLatch
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/dff_8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/dff_8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dFF_8bit
+-- Compiling architecture rtl of dFF_8bit
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/equality_Comparator_4bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/equality_Comparator_4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity equality_Comparator_4bit
+-- Compiling architecture basic of equality_Comparator_4bit
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity d_FF
+-- Compiling architecture rtl of d_FF
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_4bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_2to1_4bit
+-- Compiling architecture structural of mux_2to1_4bit
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/register_8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/register_8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register_8bit
+-- Compiling architecture rtl of register_8bit
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/BCD_to_7Segment.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/BCD_to_7Segment.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BCD_to_7Segment
+-- Compiling architecture Structural of BCD_to_7Segment
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_1bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_1bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_2to1_1bit
+-- Compiling architecture structural of mux_2to1_1bit
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_4to1_1bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_4to1_1bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_4to1_1bit
+-- Compiling architecture structural of mux_4to1_1bit
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/debouncer_2.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/debouncer_2.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity debouncer_2
+-- Compiling architecture rtl of debouncer_2
+
+} {} {}}

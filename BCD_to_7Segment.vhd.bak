@@ -1,0 +1,53 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY BCD_to_7Segment IS
+    PORT (
+        A : IN  STD_LOGIC_VECTOR(3 downto 0);  -- 4-bit BCD input
+        seg : OUT STD_LOGIC_VECTOR(6 downto 0)  -- 7-segment output (a to g)
+    );
+END BCD_to_7Segment;
+
+ARCHITECTURE Structural OF BCD_to_7Segment IS
+    SIGNAL A3, A2, A1, A0 : STD_LOGIC;
+BEGIN
+    -- Assign BCD input to individual signals
+    A3 <= A(3);
+    A2 <= A(2);
+    A1 <= A(1);
+    A0 <= A(0);
+
+    -- Output logic for the 7 segments
+    seg(0) <= (NOT A3 AND NOT A2 AND NOT A1 AND A0) OR  -- 0
+              (NOT A3 AND A2 AND A1 AND NOT A0) OR    -- 4
+              (NOT A3 AND A2 AND NOT A1 AND A0) OR    -- 5
+              (A3 AND NOT A2 AND NOT A1 AND NOT A0);  -- 6
+
+    seg(1) <= (NOT A3 AND NOT A2 AND NOT A1 AND A0) OR  -- 0
+              (NOT A3 AND A2 AND A1 AND NOT A0) OR    -- 4
+              (NOT A3 AND NOT A2 AND A1 AND A0) OR    -- 3
+              (A3 AND NOT A2 AND NOT A1 AND NOT A0);  -- 6
+
+    seg(2) <= (NOT A3 AND NOT A2 AND A1 AND NOT A0) OR  -- 2
+              (NOT A3 AND NOT A2 AND NOT A1 AND A0) OR  -- 0
+              (NOT A3 AND A2 AND NOT A1 AND A0) OR    -- 5
+              (A3 AND A2 AND NOT A1 AND NOT A0);  -- 6
+
+    seg(3) <= (NOT A3 AND NOT A2 AND NOT A1 AND A0) OR  -- 0
+              (NOT A3 AND NOT A2 AND A1 AND A0) OR    -- 2
+              (NOT A3 AND A2 AND NOT A1 AND NOT A0) OR    -- 4
+              (A3 AND NOT A2 AND NOT A1 AND A0);  -- 6
+
+    seg(4) <= (NOT A3 AND A2 AND NOT A1 AND NOT A0) OR  -- 5
+              (A3 AND NOT A2 AND NOT A1 AND A0) OR  -- 6
+              (A3 AND A2 AND NOT A1 AND A0);  -- 7
+
+    seg(5) <= (NOT A3 AND NOT A2 AND A1 AND NOT A0) OR  -- 2
+              (A3 AND NOT A2 AND NOT A1 AND NOT A0);  -- 8
+
+    seg(6) <= (NOT A3 AND NOT A2 AND NOT A1 AND A0) OR  -- 0
+              (NOT A3 AND NOT A2 AND A1 AND NOT A0) OR  -- 3
+              (NOT A3 AND A2 AND NOT A1 AND NOT A0) OR  -- 6
+              (A3 AND NOT A2 AND NOT A1 AND NOT A0);  -- 9
+
+END Structural;

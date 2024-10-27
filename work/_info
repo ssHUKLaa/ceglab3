@@ -1,0 +1,477 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\sahil\Documents\repos\vhdl_files\lab2sim
+Ebcd_to_7segment
+Z0 w1729928341
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\sahil\Documents\repos\vhdl_files\lab3
+Z4 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/BCD_to_7Segment.vhd
+Z5 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/BCD_to_7Segment.vhd
+l0
+L4
+V3AADG>lzP7gH]cJ_0B:<T1
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1729989553.205000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/BCD_to_7Segment.vhd|
+Z9 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/BCD_to_7Segment.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 gH9fALgV=z?2FIlM;KC0Y2
+!i10b 1
+Astructural
+R1
+R2
+DEx4 work 15 bcd_to_7segment 0 22 3AADG>lzP7gH]cJ_0B:<T1
+l13
+L11
+V6<f5OYDZd<IkFQ3:ETm>B1
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 hEXZY4_9P^:44;V@S:Wd?1
+!i10b 1
+Ecounter_4bit
+Z12 w1729974511
+R1
+R2
+R3
+Z13 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/counter_4bit.vhd
+Z14 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/counter_4bit.vhd
+l0
+L5
+V<ZJ=GmE6R;kF3O5=E=9e83
+R6
+32
+Z15 !s108 1729989552.882000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/counter_4bit.vhd|
+Z17 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/counter_4bit.vhd|
+R10
+R11
+!s100 bYLZD2RC6cMaeYfZ=094L3
+!i10b 1
+Astructural
+R1
+R2
+DEx4 work 12 counter_4bit 0 22 <ZJ=GmE6R;kF3O5=E=9e83
+l35
+L14
+VIY`[@KnSYnAIoZ_P[d9FB1
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!s100 OkYKjm5QL3K^OPS6@ON_^3
+!i10b 1
+Abasic
+R1
+R2
+DEx4 work 12 counter_4bit 0 22 >k=aW]:Tl@jzi7]6TZSd<2
+l44
+L11
+V`W2]kZLYJ@D6T]Go9WS0e3
+R6
+32
+R16
+R10
+R11
+w1729911716
+R17
+!s108 1729912174.828000
+!s100 jL]9bSk7z_>6ROkeN0e]g2
+!i10b 1
+Ed_ff
+Z18 w1729914058
+R1
+R2
+R3
+Z19 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF.vhd
+Z20 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF.vhd
+l0
+L4
+VFeUZHT3gl`I@6jDNg4;<i0
+R6
+32
+Z21 !s108 1729989552.935000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF.vhd|
+Z23 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF.vhd|
+R10
+R11
+!s100 ^FfBWTZ5QeA<a`2L;6_LB3
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 4 d_ff 0 22 FeUZHT3gl`I@6jDNg4;<i0
+l23
+L11
+VPAQoT;349k[?@Ybm@ZCM[1
+R6
+32
+R21
+R22
+R23
+R10
+R11
+!s100 aj@G>D3Yb499=2edVgRQZ2
+!i10b 1
+Ed_ff_enar
+Z24 w1729928175
+R1
+R2
+R3
+Z25 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF_enar.vhd
+Z26 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF_enar.vhd
+l0
+L4
+Vo6dZLFFPfTdARO^Hc[=m82
+R6
+32
+Z27 !s108 1729989553.312000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF_enar.vhd|
+Z29 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/d_FF_enar.vhd|
+R10
+R11
+!s100 3@93naU@hjiLP_KWbgn901
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 9 d_ff_enar 0 22 o6dZLFFPfTdARO^Hc[=m82
+l23
+L11
+VBWShUloC41FU58mZ@ffQa3
+R6
+32
+R27
+R28
+R29
+R10
+R11
+!s100 E2e<9CZbCgKnhdoe2]8Vg0
+!i10b 1
+Edebouncer_2
+Z30 w1729928090
+R1
+R2
+R3
+Z31 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/debouncer_2.vhd
+Z32 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/debouncer_2.vhd
+l0
+L28
+VEEVD][9B<23km:7eMejMc2
+R6
+32
+Z33 !s108 1729989553.368000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/debouncer_2.vhd|
+Z35 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/debouncer_2.vhd|
+R10
+R11
+!s100 CP:aP=P4hC1f1EOUYE08n2
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 11 debouncer_2 0 22 EEVD][9B<23km:7eMejMc2
+l47
+L36
+V`e1G2nU5=5Wk`8j:fg1JM2
+R6
+32
+R33
+R34
+R35
+R10
+R11
+!s100 RbO?midfR=5eZO6U<E5Pe1
+!i10b 1
+Edff_8bit
+Z36 w1727639538
+R1
+R2
+R3
+Z37 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/dff_8bit.vhd
+Z38 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/dff_8bit.vhd
+l0
+L4
+V>SJ;GA8Z817ZO7>;J=R_^0
+R6
+32
+Z39 !s108 1729989552.987000
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/dff_8bit.vhd|
+Z41 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/dff_8bit.vhd|
+R10
+R11
+!s100 z19oXVi77FekI=DldhaVE2
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 8 dff_8bit 0 22 >SJ;GA8Z817ZO7>;J=R_^0
+l27
+L13
+VE6lh`SV^?KZ6[Af9Ub;>@0
+R6
+32
+R39
+R40
+R41
+R10
+R11
+!s100 a@>RHj>d?U0MDHDn@OJEh0
+!i10b 1
+Eenabledsrlatch
+Z42 w1729913703
+R1
+R2
+R3
+Z43 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/enabledsrlatch.vhd
+Z44 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/enabledsrlatch.vhd
+l0
+L4
+VjRihek:l0RQIE4H]lagKO2
+R6
+32
+Z45 !s108 1729989553.042000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/enabledsrlatch.vhd|
+Z47 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/enabledsrlatch.vhd|
+R10
+R11
+!s100 D;>M2JLa?=ViS6W?XJ?^[3
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 14 enabledsrlatch 0 22 jRihek:l0RQIE4H]lagKO2
+l14
+L11
+VH7d1l38R;Vk>aKK7b[f]m1
+R6
+32
+R45
+R46
+R47
+R10
+R11
+!s100 1XLEXSR0f9N8Ace@[JAdW2
+!i10b 1
+Eequality_comparator_4bit
+Z48 w1729926025
+R1
+R2
+R3
+Z49 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/equality_Comparator_4bit.vhd
+Z50 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/equality_Comparator_4bit.vhd
+l0
+L4
+Vl93eaODn1;^CMKgZlLefm3
+R6
+32
+Z51 !s108 1729989553.256000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/equality_Comparator_4bit.vhd|
+Z53 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/equality_Comparator_4bit.vhd|
+R10
+R11
+!s100 lFXcDV73U]YB5eDP<7f]33
+!i10b 1
+Abasic
+R1
+R2
+DEx4 work 24 equality_comparator_4bit 0 22 l93eaODn1;^CMKgZlLefm3
+l13
+L11
+Vg1^YXL=O4Qh6dFfnXdf2k0
+R6
+32
+R51
+R52
+R53
+R10
+R11
+!s100 oLVKnX=0zE]jQeCX3_6PV1
+!i10b 1
+Emux_2to1_1bit
+Z54 w1728520921
+R1
+R2
+R3
+Z55 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_1bit.vhd
+Z56 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_1bit.vhd
+l0
+L4
+V9<1eV_2imJi4BQjWV;>;o3
+R6
+32
+Z57 !s108 1729989553.482000
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_1bit.vhd|
+Z59 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_1bit.vhd|
+R10
+R11
+!s100 L>I5iNbcHG4<nIF``@ji;1
+!i10b 1
+Astructural
+R1
+R2
+DEx4 work 13 mux_2to1_1bit 0 22 9<1eV_2imJi4BQjWV;>;o3
+l14
+L13
+V5d;QTbH0V`;2>dY]W]5?f1
+R6
+32
+R57
+R58
+R59
+R10
+R11
+!s100 Ai@7l4CO?HT>S[ddE>ZRc1
+!i10b 1
+Emux_2to1_4bit
+R54
+R1
+R2
+R3
+Z60 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_4bit.vhd
+Z61 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_4bit.vhd
+l0
+L4
+V8JVgW@Pl<C1@D7kb>`W]m0
+R6
+32
+Z62 !s108 1729989553.098000
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_4bit.vhd|
+Z64 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_2to1_4bit.vhd|
+R10
+R11
+!s100 4=e`@TEmoAUcg2I]628zV3
+!i10b 1
+Astructural
+R1
+R2
+DEx4 work 13 mux_2to1_4bit 0 22 8JVgW@Pl<C1@D7kb>`W]m0
+l22
+L15
+VZ9[HFZzj6TGP3[l]QFc941
+R6
+32
+R62
+R63
+R64
+R10
+R11
+!s100 jgnNXdAnn]51C81S=:5cP3
+!i10b 1
+Emux_4to1_1bit
+R54
+R1
+R2
+R3
+Z65 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_4to1_1bit.vhd
+Z66 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_4to1_1bit.vhd
+l0
+L4
+VnI5HXg2XS[i20`HK_BL;G3
+R6
+32
+Z67 !s108 1729989553.542000
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_4to1_1bit.vhd|
+Z69 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_4to1_1bit.vhd|
+R10
+R11
+!s100 XzN]O<@aicMAO1kz8DQEz0
+!i10b 1
+Astructural
+R1
+R2
+DEx4 work 13 mux_4to1_1bit 0 22 nI5HXg2XS[i20`HK_BL;G3
+l16
+L13
+V`K<X7M>j3i0a[n>7B?_<U3
+R6
+32
+R67
+R68
+R69
+R10
+R11
+!s100 MUH2zi[CeCSDmkI8JXH[i2
+!i10b 1
+Eregister_8bit
+R54
+R1
+R2
+R3
+Z70 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/register_8bit.vhd
+Z71 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/register_8bit.vhd
+l0
+L4
+Vm[HW=Bh0XE6T9ZcmJD6mn2
+R6
+32
+Z72 !s108 1729989553.152000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/register_8bit.vhd|
+Z74 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/register_8bit.vhd|
+R10
+R11
+!s100 6^8;ZXl=_OLU?OCB3?h4h0
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 13 register_8bit 0 22 m[HW=Bh0XE6T9ZcmJD6mn2
+l25
+L13
+VPlRNWOJTVRadz02n?iLhI1
+R6
+32
+R72
+R73
+R74
+R10
+R11
+!s100 c<bRi^Hb6b@nH3K5jjDJU2
+!i10b 1
+Etoplevel
+Z75 w1729991947
+R1
+R2
+R3
+Z76 8C:/Users/sahil/Documents/repos/vhdl_files/lab3/topLevel.vhd
+Z77 FC:/Users/sahil/Documents/repos/vhdl_files/lab3/topLevel.vhd
+l0
+L4
+VQ;@b7DhD0Q;YkRI2f6Q?o2
+!s100 P6ghnd`eKEM0_3aMBO4WS2
+R6
+32
+!i10b 1
+Z78 !s108 1729991955.406000
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/sahil/Documents/repos/vhdl_files/lab3/topLevel.vhd|
+Z80 !s107 C:/Users/sahil/Documents/repos/vhdl_files/lab3/topLevel.vhd|
+R10
+R11
+Abasic
+R1
+R2
+Z81 DEx4 work 8 toplevel 0 22 Q;@b7DhD0Q;YkRI2f6Q?o2
+l84
+L13
+VWkdSJ[cU@543MUaVY?Dd`1
+!s100 5L5Wim8EmWB?:3?jBPYQ[0
+R6
+32
+!i10b 1
+R78
+R79
+R80
+R10
+R11
