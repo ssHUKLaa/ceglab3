@@ -1,12 +1,4 @@
-C:/Users/sahil/Documents/repos/vhdl_files/lab3/counter_4bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/counter_4bit.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity counter_4bit
--- Compiling architecture Structural of counter_4bit
-
-} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/topLevel.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/topLevel.vhd
+C:/Users/sahil/Documents/repos/vhdl_files/lab3/topLevel.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/topLevel.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -86,14 +78,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity mux_2to1_1bit
 -- Compiling architecture structural of mux_2to1_1bit
 
-} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_4to1_1bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_4to1_1bit.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity mux_4to1_1bit
--- Compiling architecture structural of mux_4to1_1bit
-
 } {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/debouncer_2.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/debouncer_2.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -101,5 +85,13 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package std_logic_1164
 -- Compiling entity debouncer_2
 -- Compiling architecture rtl of debouncer_2
+
+} {} {}} C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_4to1_1bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/sahil/Documents/repos/vhdl_files/lab3/mux_4to1_1bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_4to1_1bit
+-- Compiling architecture structural of mux_4to1_1bit
 
 } {} {}}

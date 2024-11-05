@@ -1,16 +1,16 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
-Entity topLevel IS
+Entity trafficLighttopLevel IS
 	PORT (
 		GClock, GReset, SSCS : IN STD_LOGIC;
 		MSC, SSC : IN STD_LOGIC_VECTOR(3 downto 0);
 		MSTL, SSTL : OUT STD_LOGIC_VECTOR(2 downto 0);
 		SegmentOut : OUT STD_LOGIC_VECTOR(13 downto 0)
 	);
-END topLevel;
+END trafficLighttopLevel;
 
-architecture basic of topLevel IS
+architecture basic of trafficLighttopLevel IS
 	
 	COMPONENT BCD_to_7Segment 
 		PORT (
@@ -31,6 +31,7 @@ architecture basic of topLevel IS
 			CLK   : in STD_LOGIC;
          i_enable   : in STD_LOGIC;
 			i_hold : IN STD_LOGIC;
+			i_reset : IN STD_LOGIC;
          COUNT : out STD_LOGIC_VECTOR (3 downto 0)
 		);
 	END COMPONENT;
@@ -39,7 +40,7 @@ architecture basic of topLevel IS
 		PORT (
 			d0 : IN STD_LOGIC;
          d1 : IN STD_LOGIC;
-         sel, en : IN STD_LOGIC;
+         sel : IN STD_LOGIC;
          d_out : OUT STD_LOGIC
 		);
 	END COMPONENT;
@@ -64,16 +65,27 @@ architecture basic of topLevel IS
 	
 	component d_FF
        Port (
-				i_d			: IN	STD_LOGIC;
+				i_d, i_en, i_reset			: IN	STD_LOGIC;
 				i_clock			: IN	STD_LOGIC;
 				o_q, o_qBar		: OUT	STD_LOGIC
        );
     end component;
+	 
+	COMPONENT clk_div
+		PORT (
+			clock_25Mhz				: IN	STD_LOGIC;
+			clock_1MHz				: OUT	STD_LOGIC;
+			clock_100KHz			: OUT	STD_LOGIC;
+			clock_10KHz				: OUT	STD_LOGIC;
+			clock_1KHz				: OUT	STD_LOGIC;
+			clock_100Hz				: OUT	STD_LOGIC;
+			clock_10Hz				: OUT	STD_LOGIC;
+			clock_1Hz				: OUT	STD_LOGIC
+		);
+	END COMPONENT;
 	
 	signal MT, SST : STD_LOGIC_VECTOR(3 downto 0);
-	signal transitoryMSLT, transitoryMTTT, transitorySSLT, transitorySSTT, displayOnBCD : STD_LOGIC_VECTOR(3 downto 0);
-	signal transitoryMSTL : bit_vector(1 downto 0);
-	signal transitorySSTL : bit_vector(1 downto 0);
+	signal transitoryMSLT, transitoryMTTT, transitorySSLT, transitorySSTT, displayOnBCD, displayOnBCD2 : STD_LOGIC_VECTOR(3 downto 0);
 	signal MSTLIsGreen, MSTLIsYellow, MSTLIsRed : STD_LOGIC;
 	signal SSTLIsGreen, SSTLIsYellow : STD_LOGIC;
 	signal STDtransitoryMSTL, STDtransitorySSTL, STDtransitoryMSTLDecider, STDtransitorySSTLDecider : STD_LOGIC_VECTOR(1 downto 0);
@@ -85,8 +97,9 @@ begin
 	MT <= "1100";
 	SST <= "1000"; 
 	
-	STDtransitoryMSTL <= to_stdlogicvector(transitoryMSTL);
-	STDtransitorySSTL <= to_stdlogicvector(transitorySSTL);
+	
+	STDtransitoryMSTL <= STDtransitoryMSTLDecider;
+	STDtransitorySSTL <= STDtransitorySSTLDecider;
 	MSLTHoldCond <= MSTLReachedEnd AND NOT SSCS;
 		
 	counter_4bit_MSLTimer : counter_4bit
@@ -94,6 +107,7 @@ begin
 			CLK => GClock,
 			i_enable => STDtransitoryMSTL(1),
 			i_hold => MSLTHoldCond,
+			i_reset => GReset,
 			COUNT => transitoryMSLT
 		);
 	
@@ -109,6 +123,7 @@ begin
 			CLK => GClock,
 			i_enable => STDtransitoryMSTL(0),
 			i_hold => '0',
+			i_reset => GReset,
 			COUNT => transitoryMTTT
 		);
 	
@@ -124,6 +139,7 @@ begin
 			CLK => GClock,
 			i_enable => STDtransitorySSTL(1),
 			i_hold => '0',
+			i_reset => GReset,
 			COUNT => transitorySSLT
 		);
 	
@@ -139,6 +155,7 @@ begin
 			CLK => GClock,
 			i_enable => STDtransitorySSTL(0),
 			i_hold => '0',
+			i_reset => GReset,
 			COUNT => transitorySSTT
 		);
 	
@@ -150,7 +167,8 @@ begin
 		);
 		
 	MSTLIsGreen <= (((NOT SSCS OR NOT MSTLReachedEnd) AND (STDtransitoryMSTL(1) AND NOT STDtransitoryMSTL(0))) OR 
-	(SSTReachedEnd OR (NOT STDtransitoryMSTL(1) OR NOT STDtransitoryMSTL(0)))) AND NOT (MSTLIsYellow OR STDtransitorySSTL(1) OR STDtransitorySSTL(0));
+	(SSTReachedEnd OR (NOT STDtransitoryMSTL(1) OR NOT STDtransitoryMSTL(0)))) 
+	AND NOT (MSTLIsYellow OR STDtransitorySSTL(1) OR STDtransitorySSTL(0)) AND NOT SSTLIsGreen;
 	
 	MSTLIsYellow <= (((SSCS AND MSTLReachedEnd) AND (STDtransitoryMSTL(1) AND NOT STDtransitoryMSTL(0))) OR 
 	(NOT MTReachedEnd AND (NOT STDtransitoryMSTL(1) AND STDtransitoryMSTL(0))));
@@ -162,6 +180,8 @@ begin
 	d_FF_MSTL_High : d_FF
 		PORT MAP (
 			i_d => MSTLIsGreen, 
+			i_en => '1',
+			i_reset => GReset,
 			i_clock => GClock, 
 			o_q => STDtransitoryMSTLDecider(1), 
 			o_qBar => open
@@ -170,12 +190,12 @@ begin
 	d_FF_MSTL_Low : d_FF
 		PORT MAP (
 			i_d => MSTLIsYellow, 
+			i_en => '1',
+			i_reset => GReset,
 			i_clock => GClock, 
 			o_q => STDtransitoryMSTLDecider(0), 
 			o_qBar => open
 		);
-		
-	transitoryMSTL <= to_bitvector(STDtransitoryMSTLDecider);
 	
 	SSTLIsGreen <= (MTReachedEnd AND (NOT STDtransitorySSTL(1) AND NOT STDtransitorySSTL(0))) OR 
 	(NOT SSTLReachedEnd AND (STDtransitorySSTL(1) AND NOT STDtransitorySSTL(0)));
@@ -186,6 +206,8 @@ begin
 	d_FF_SSTL_High : d_FF
 		PORT MAP (
 			i_d => SSTLIsGreen, 
+			i_en => '1',
+			i_reset => GReset,
 			i_clock => GClock, 
 			o_q => STDtransitorySSTLDecider(1), 
 			o_qBar => open
@@ -194,12 +216,12 @@ begin
 	d_FF_SSTL_Low : d_FF
 		PORT MAP (
 			i_d => SSTLIsYellow, 
+			i_en => '1',
+			i_reset => GReset,
 			i_clock => GClock, 
 			o_q => STDtransitorySSTLDecider(0), 
 			o_qBar => open
 		);
-		
-	transitorySSTL <= to_bitvector(STDtransitorySSTLDecider);
 	
 	SSTL(0) <= NOT STDtransitorySSTLDecider(1) AND NOT STDtransitorySSTLDecider(0);
 	SSTL(1) <= STDtransitorySSTLDecider(0);
@@ -209,10 +231,11 @@ begin
 	MSTL(2) <= STDtransitoryMSTLDecider(1);
 	
 	displayOnBCD <= transitoryMSLT OR transitoryMTTT OR transitorySSLT OR transitorySSTT;
+	displayOnBCD2 <= NOT displayOnBCD;
 	
 	BCD_to_7Segment_inst : BCD_to_7Segment
 		PORT MAP (
-			A_in => displayOnBCD,
+			A_in => displayOnBCD2,
 			seg => SegmentOut
 		);
 	
